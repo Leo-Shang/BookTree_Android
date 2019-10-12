@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/findBook"
+        android:title="@string/Find_Book"
+        android:icon="@drawable/nav_homepage" />
+
+    <item
+        android:id="@+id/sellBook"
+        android:title="@string/sell_book"
+        android:icon="@drawable/nav_post" />
+
+    <item
+        android:id="@+id/myBuyers"
+        android:title="@string/my_buyers"
+        android:icon="@drawable/nav_buyer" />
+
+    <item
+        android:id="@+id/myAccount"
+        android:title="@string/my_account"
+        android:icon="@drawable/nav_me" />
+</menu>

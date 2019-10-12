@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sell_book_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:itemTextColor="#bdccd4"
+        app:itemIconTint="#bdccd4"
+        app:menu="@menu/navigation" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/scroll_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/scroll_top">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/arrow_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.08" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/left_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.10" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/right_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.90" />
+
+            <TextView
+                android:id="@+id/sell_book_book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/book_name"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/arrow_top" />
+
+            <AutoCompleteTextView
+                android:id="@+id/bookName_textfield"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_edittext"
+                android:completionHint="@string/Enter_Book_Name"
+                android:fontFamily="@font/regular"
+                android:hint="@string/Enter_Book_Name"
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="Algorithm"
+                android:textColor="#505050"
+                android:textColorHint="#505050"
+                android:textCursorDrawable="@drawable/dark_grey_cursor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/right_guideline"
+                app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/sell_book_book_name" />
+
+            <TextView
+                android:id="@+id/sell_book_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/author"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/bookName_textfield" />
+
+            <EditText
+                android:id="@+id/Author"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/regular"
+                android:hint="@string/Enter_Author"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="test_Author"
+                android:textColor="#505050"
+                android:textColorHint="#505050"
+                android:textCursorDrawable="@drawable/dark_grey_cursor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/right_guideline"
+                app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/sell_book_author" />
+
+            <TextView
+                android:id="@+id/sell_book_edition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/edition"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/Author" />
+
+            <TextView
+                android:id="@+id/sell_book_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/price"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/price"
+                app:layout_constraintTop_toBottomOf="@+id/Author" />
+
+            <EditText
+                android:id="@+id/Edition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/regular"
+                android:hint="@string/Enter_Edition"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="8E"
+                android:textColor="#505050"
+                android:textColorHint="#505050"
+                android:textCursorDrawable="@drawable/dark_grey_cursor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/price"
+                app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/sell_book_edition" />
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/regular"
+                android:hint="@string/set_price"
+                android:inputType="numberDecimal"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="120"
+                android:textColor="#505050"
+                android:textColorHint="#505050"
+                android:textCursorDrawable="@drawable/dark_grey_cursor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/right_guideline"
+                app:layout_constraintStart_toEndOf="@+id/Edition"
+                app:layout_constraintTop_toBottomOf="@+id/sell_book_price" />
+
+            <TextView
+                android:id="@+id/sell_book_advance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/which_school_and_course_the_book_is_used_for"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/Edition" />
+
+            <Spinner
+                android:id="@+id/school"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/rounded_edittext"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:popupBackground="@drawable/custom_spinner"
+                android:spinnerMode="dropdown"
+                android:textColor="#FFFFFF"
+                android:theme="@style/SpinnerStyle"
+                app:layout_constraintBottom_toBottomOf="@+id/course_num"
+                app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/sell_book_advance" />
+
+
+            <EditText
+                android:id="@+id/course_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/regular"
+                android:hint="@string/course_num"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="CMPT 225"
+                android:textColor="#505050"
+                android:textColorHint="#505050"
+                android:textCursorDrawable="@drawable/dark_grey_cursor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/right_guideline"
+                app:layout_constraintStart_toEndOf="@+id/school"
+                app:layout_constraintTop_toBottomOf="@+id/sell_book_advance" />
+
+            <TextView
+                android:id="@+id/extra_contact_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/extra_contact"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/course_num" />
+
+            <EditText
+                android:id="@+id/extraContact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/regular"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:textColor="#505050"
+                android:textColorHint="#505050"
+                android:textCursorDrawable="@drawable/dark_grey_cursor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/right_guideline"
+                app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/extra_contact_text" />
+
+            <TextView
+                android:id="@+id/sell_book_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/book_description"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/extraContact" />
+
+
+            <EditText
+                android:id="@+id/book_descrip"
+                android:layout_width="0dp"
+                android:layout_height="27dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/regular"
+                android:inputType="textMultiLine"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:textColor="#505050"
+                android:textColorHint="#505050"
+                android:textCursorDrawable="@drawable/dark_grey_cursor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/right_guideline"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/sell_book_description" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/right_guideline"
+                app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/book_descrip">
+
+
+                <TextView
+                    android:id="@+id/sell_book_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/sell_book_image"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                    app:layout_constraintTop_toBottomOf="@+id/sell_book_description" />
+
+                <ImageButton
+                    android:id="@+id/add_pic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:onClick="clickAddPicButton"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sell_book_image_btn"
+                    app:layout_constraintStart_toEndOf="@+id/sell_book_image"
+                    app:layout_constraintTop_toBottomOf="@+id/book_descrip" />
+
+            </LinearLayout>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/button_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.69" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/button_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.999" />
+
+            <Button
+                android:id="@+id/sellBook"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/sell"
+                android:onClick="clickSellBookButton"
+                app:layout_constraintBottom_toTopOf="@id/button_bottom"
+                app:layout_constraintEnd_toStartOf="@+id/right_guideline"
+                app:layout_constraintStart_toStartOf="@+id/button_left"
+                app:layout_constraintTop_toBottomOf="@id/LinearLayout" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

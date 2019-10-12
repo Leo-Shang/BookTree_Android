@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "401929812302",
+    "firebase_url": "https://book-tree.firebaseio.com",
+    "project_id": "book-tree",
+    "storage_bucket": "book-tree.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401929812302:android:16e765cd24b1ce54",
+        "android_client_info": {
+          "package_name": "com.book_project.usedbookfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401929812302-sc37qekj0nnb2qqljfdbq8h231u3rmnq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfYzR-eZqXT18nQXWy5REJtp_3QxL-NJw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

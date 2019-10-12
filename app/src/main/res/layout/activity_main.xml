@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bk_entry" />
+
+    <ImageButton
+        android:id="@+id/Sign_In"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:onClick="clickLogonButton"
+        android:scaleType="fitCenter"
+        android:src="@drawable/login_btn"
+        android:text="@string/Sign_In"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nav_line" />
+    <!--app:layout_constraintTop_toBottomOf="@+id/password" />-->
+
+    <ImageButton
+        android:id="@+id/logon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:onClick="clickSigninButton"
+        android:scaleType="fitCenter"
+        android:src="@drawable/signup_btn"
+        android:text="@string/Log_On"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sign_In" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/nav_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+
+</android.support.constraint.ConstraintLayout>

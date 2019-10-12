@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Used Book Finder</string>
+    <string name="find_book">Find Book</string>
+    <string name="sell_book">Sell</string>
+    <string name="Sign_In">Sign Up</string>
+    <string name="Log_On">Log On</string>
+    <string name="Enter_Password">Enter Password</string>
+    <string name="Enter_UserName">Enter User Name</string>
+    <string name="Enter_Book_Name">Enter Book Name</string>
+    <string name="Enter_Edition">Enter Edition</string>
+    <string name="Find_Book">Find</string>
+    <string name="sell_me">Sell Me</string>
+    <string name="logOut">Log Out</string>
+    <string name="change_password">Change Password</string>
+    <string name="book_descrip">(Optional)Book Description</string>
+    <string name="set_price">Enter Selling Price Here</string>
+    <string name="add_pic">Add Picture</string>
+    <string name="course_num">Course Number</string>
+    <string name="school">School</string>
+    <string name="Enter_Author">Enter_Author</string>
+    <string name="Book_Name">Book Name</string>
+    <string name="Author">Author</string>
+    <string name="Price">Price</string>
+    <string name="my_account">My Account</string>
+    <string name="my_book">My Books</string>
+    <string name="my_buyers">My Buyers</string>
+    <string name="search_by">Search By</string>
+    <string name="buyButton">Buy</string>
+    <string name="Enter_Email">Enter Email</string>
+    <string name="myOrder">My Orders</string>
+    <string name="please_enter_your_email">Please Enter Your Email</string>
+    <string name="email">Email</string>
+    <string name="ok">OK</string>
+    <item name="login_go_guide" type="id" />
+    <item name="login_pwd_guide" type="id" />
+    <item name="login_email_guide" type="id" />
+    <string name="title_activity_nav">NavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="seller">Seller</string>
+    <string name="extra_contact">Extra Contact</string>
+    <string name="cancel_transaction">Cancel Transaction</string>
+    <string name="finish">Finish</string>
+    <string name="book_name">Book name</string>
+    <string name="author">Author</string>
+    <string name="price">Price</string>
+    <string name="which_school_and_course_the_book_is_used_for">Which school and course the book is used for?</string>
+    <string name="book_description">Book description</string>
+    <string name="sell_book_image">Book image</string>
+    <string name="school_course"><![CDATA[School & Course]]></string>
+    <string name="create_date">Create Date</string>
+    <string name="split_bar">|</string>
+    <string name="edition">Edition</string>
+    <string name="description">Description</string>
+
+</resources>
